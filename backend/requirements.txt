@@ -1,0 +1,4 @@
+passlib[bcrypt]
+SQLAlchemy==2.0.3
+fastapi[all]==0.92.0
+pyjwt==2.6.0
