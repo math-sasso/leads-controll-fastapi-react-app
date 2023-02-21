@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/matheus/Projects/personal/fastapi-react-crud/backend/venv"
+VIRTUAL_ENV="/home/matheus/Projects/personal/leads-controll-fastapi-react-app/backend/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

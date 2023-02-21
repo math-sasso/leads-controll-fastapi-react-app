@@ -1,4 +1,4 @@
-#!/home/matheus/Projects/personal/fastapi-react-crud/backend/venv/bin/python3
+#!/home/matheus/Projects/personal/leads-controll-fastapi-react-app/backend/venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys

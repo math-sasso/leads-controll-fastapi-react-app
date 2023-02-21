@@ -29,7 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/matheus/Projects/personal/fastapi-react-crud/backend/venv"
+set -gx VIRTUAL_ENV "/home/matheus/Projects/personal/leads-controll-fastapi-react-app/backend/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

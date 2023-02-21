@@ -108,9 +108,9 @@ async def update_lead(id: int, lead: schemas.LeadCreate, user: schemas.User, db:
     lead_db = await lead_selector(id=id, user=user, db=db)
     lead_db.first_name = lead.first_name
     lead_db.last_name = lead.last_name
-    lead_db.last_name = lead.last_name
-    lead_db.last_name = lead.last_name
-    lead_db.last_name = lead.last_name
+    lead_db.company = lead.company
+    lead_db.email = lead.email
+    lead_db.note = lead.email
     lead_db.date_last_updated = dt.datetime.utcnow()
 
 

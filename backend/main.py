@@ -64,7 +64,7 @@ async def get_lead(
     return await crud.get_leads(user=user, db=db)
 
 
-@app.get("/api/lead/{id}", response_model=schemas.Lead)
+@app.get("/api/leads/{id}", response_model=schemas.Lead)
 async def get_lead(
     id: int,
     user: schemas.User = fastapi.Depends(crud.get_current_user),
@@ -73,7 +73,7 @@ async def get_lead(
     return await crud.get_lead(id=id, user=user,db=db)
 
 
-@app.delete("/api/lead/{id}", status_code=204)
+@app.delete("/api/leads/{id}", status_code=204)
 async def delete_lead(
     id: int,
     user: schemas.User = fastapi.Depends(crud.get_current_user),
@@ -82,7 +82,7 @@ async def delete_lead(
     await crud.delete_lead(id=id, user=user,db=db)
     return {"message": "Succesfuly Deleted"}
 
-@app.put("/api/lead/{id}", status_code=200)
+@app.put("/api/leads/{id}", status_code=200)
 async def update_lead(
     id: int,
     lead: schemas.LeadCreate,
